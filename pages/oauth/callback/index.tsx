@@ -19,51 +19,44 @@ const CallbackComponent = () => {
     // Get the error from the URL
     const error = urlParams.get("error");
 
-    // If the user denied access, close the window
-    if (error === "access_denied") {
+    if (error) {
       localStorage.setItem("data-received", "false");
-      window.close();
+      setTimeout(() => {
+        window.close();
+      }, 2000);
     }
 
     const fetchData = async () => {
-      try {
-        // Set loading to true
-        setLoading(true);
+      // Set loading to true
+      setLoading(true);
 
-        // Make a request to the server to get the data
-        const response = await create({
-          code,
-          oauthEndpoint:
-            "https://poorlankyarraylist.krishparekh11.repl.co/oauth",
-          oauthHeaders: {
-            Hello: "World",
-          },
-          group: "test-oauth-53",
-          label: "test-oauth-53",
-        });
+      // Make a request to the server to get the data
+      const response = await create({
+        code,
+        oauthEndpoint: "https://poorlankyarraylist.krishparekh11.repl.co/oauth",
+        oauthHeaders: {
+          Hello: "World",
+        },
+        group: "test-oauth-53",
+        label: "test-oauth-53",
+      });
 
-        // Set loading to false
-        setLoading(false);
-
-        // Set the data in local storage
-        localStorage.setItem("data-received", "true");
-
-        // Close the window
-        setTimeout(() => {
-          window.close();
-        }, 2000);
-      } catch (error) {
-        // Set loading to false
-        setLoading(false);
-
+      // If there is an error
+      if (response?.error?.status === "error") {
         // Set the data in local storage
         localStorage.setItem("data-received", "false");
-
-        // Close the window
-        setTimeout(() => {
-          window.close();
-        }, 2000);
+      } else {
+        // Set the data in local storage
+        localStorage.setItem("data-received", "true");
       }
+
+      // Set loading to false
+      setLoading(false);
+
+      // Close the window
+      setTimeout(() => {
+        window.close();
+      }, 2000);
     };
 
     // If there is a code, fetch the data
