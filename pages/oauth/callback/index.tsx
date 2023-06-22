@@ -33,8 +33,8 @@ const CallbackComponent = () => {
       // Make a request to the server to get the data
       const response = await create({
         code,
-        oauthEndpoint: "https://poorlankyarraylist.krishparekh11.repl.co/oauth",
-        oauthHeaders: {
+        endpoint: "https://poorlankyarraylist.krishparekh11.repl.co/oauth",
+        headers: {
           Hello: "World",
         },
         group: "test-oauth-53",
