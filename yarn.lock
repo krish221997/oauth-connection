@@ -977,10 +977,10 @@
   "resolved" "https://registry.npmjs.org/@emotion/weak-memoize/-/weak-memoize-0.3.1.tgz"
   "version" "0.3.1"
 
-"@event-inc/link@^1.0.13":
-  "integrity" "sha512-TfsttyS03YMhy/OeMYaLDQz4192823FeHV7jcA8mjXmmij80t6OaJ2xqVSWyeJksrABwjZ/L/0rjNuQ0JZuVEg=="
-  "resolved" "https://registry.npmjs.org/@event-inc/link/-/link-1.0.13.tgz"
-  "version" "1.0.13"
+"@event-inc/link@^1.0.15":
+  "integrity" "sha512-mPWbd7Hglj+TUr/bRXrh/Xs0bMa49W0TLWcHxwL2NM5ks4Iult1ohN4kEu7iKQ0UkeUO+D7ggDraY/jqe6KG3w=="
+  "resolved" "https://registry.npmjs.org/@event-inc/link/-/link-1.0.15.tgz"
+  "version" "1.0.15"
 
 "@next/env@13.4.5":
   "integrity" "sha512-SG/gKH6eij4vwQy87b/3mbpQ1X3x2vUdnpwq6/qL2IQWjtq58EY/UuNAp9CoEZoC9sI4L9AD1r+73Z9r4d3uug=="
@@ -991,6 +991,11 @@
   "integrity" "sha512-XvTzi2ASUN5bECFIAAcBiSoDb0xsq+KLj4F0bof4d4rdc+FgOqLvseGQaOXwVi1TIh5bHa7o4b6droSJMO5+2g=="
   "resolved" "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.4.5.tgz"
   "version" "13.4.5"
+
+"@opentelemetry/api@^1.1.0":
+  "integrity" "sha512-O2yRJce1GOc6PAy3QxFM4NzFiWzvScDC1/5ihYBL6BUEVdq0XMWN01sppE+H6bBXbaFYipjwFLEWLg5PaSOThA=="
+  "resolved" "https://registry.npmjs.org/@opentelemetry/api/-/api-1.4.1.tgz"
+  "version" "1.4.1"
 
 "@popperjs/core@^2.9.3":
   "integrity" "sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A=="
