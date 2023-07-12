@@ -1,6 +1,8 @@
-import { useOauthDestination } from "@event-inc/link";
+// Change this to useOauth
+
+import { useOauth } from "@event-inc/link";
 export const useOauthDestinationUx = () => {
-  const { open, create } = useOauthDestination({
+  const { open, create } = useOauth({
     clientId: process.env.NEXT_PUBLIC_XERO_CLIENT_ID,
     redirectUri: process.env.NEXT_PUBLIC_REDIRECT_URI,
     type: "xero",

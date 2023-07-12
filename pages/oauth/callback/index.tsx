@@ -13,6 +13,8 @@ const CallbackComponent = () => {
     // Get the code from the URL
     const code = urlParams.get("code");
 
+    console.log(code, "code")
+
     // Get the state from the URL
     const state = urlParams.get("state");
 
@@ -33,7 +35,7 @@ const CallbackComponent = () => {
       // Make a request to the server to get the data
       const response = await create({
         code,
-        endpoint: "https://poorlankyarraylist.krishparekh11.repl.co/oauth",
+        endpoint: "http://localhost:9000/oauth",
         headers: {
           Hello: "World",
         },

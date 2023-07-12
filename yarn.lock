@@ -977,10 +977,10 @@
   "resolved" "https://registry.npmjs.org/@emotion/weak-memoize/-/weak-memoize-0.3.1.tgz"
   "version" "0.3.1"
 
-"@event-inc/link@^1.0.15":
-  "integrity" "sha512-mPWbd7Hglj+TUr/bRXrh/Xs0bMa49W0TLWcHxwL2NM5ks4Iult1ohN4kEu7iKQ0UkeUO+D7ggDraY/jqe6KG3w=="
-  "resolved" "https://registry.npmjs.org/@event-inc/link/-/link-1.0.15.tgz"
-  "version" "1.0.15"
+"@event-inc/link@^1.0.16":
+  "integrity" "sha512-NL3h4ctGX3kkV7LOVexI16gnhP3SQBx0Dz1xzBUoWPrz3yuYl5QVmzpiTW6ReiOhDDlMrdU+7H6FUpp8m7qvpw=="
+  "resolved" "https://registry.npmjs.org/@event-inc/link/-/link-1.0.16.tgz"
+  "version" "1.0.16"
 
 "@next/env@13.4.5":
   "integrity" "sha512-SG/gKH6eij4vwQy87b/3mbpQ1X3x2vUdnpwq6/qL2IQWjtq58EY/UuNAp9CoEZoC9sI4L9AD1r+73Z9r4d3uug=="
