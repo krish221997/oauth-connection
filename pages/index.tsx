@@ -48,6 +48,12 @@ export default function Home() {
     setLoading(true);
   };
 
+  const handleSageClick = () => {
+    window.open(
+      `https://www.sageone.com/oauth2/auth/central?filter=apiv3.1&response_type=code&client_id=${process.env.NEXT_PUBLIC_SAGE_CLIENT_ID}&redirect_uri=${process.env.NEXT_PUBLIC_SAGE_REDIRECT_URI}&scope=full_access`,
+    );
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -106,7 +112,7 @@ export default function Home() {
             </a>
           )}
 
-          <a className={styles.card}>
+          <a onClick={handleSageClick} className={styles.card}>
             <h3>Sage &rarr;</h3>
             <p>Connect your Sage account by clicking here.</p>
           </a>
